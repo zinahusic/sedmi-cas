@@ -1,0 +1,13 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="NgDA9nXU{KvR*a~++o2r">vlažnost</variable></variables><block type="device_forever" id="sENS,@#+/XijS(pz6`rO" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="|aZ-`Op=9$lwTCXFxjgb"><field name="VAR" id="NgDA9nXU{KvR*a~++o2r">vlažnost</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="#j@82,]Pb~SON^X{2p;K"><field name="name">AnalogPin.P0</field></block></value></block></statement></block><block type="device_pin_event" id="pxSuMUZ:i]}uUgk*{=}4" x="0" y="153"><field name="name">TouchPin.P1</field><statement name="HANDLER"><block type="controls_if" id="Eefz4TW9WHr{N5,`3Lki"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="@o{uH?#`jLE80yGN+TUh"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="9Y0o5DXy9sNZBg{Gh^GN"><field name="VAR" id="NgDA9nXU{KvR*a~++o2r">vlažnost</field></block></value><value name="B"><shadow type="math_number" id=",|$i=0xT5a^!-~#,H(mf"><field name="NUM">700</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="me_]4w~n`:h{DPoEpN9v"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # . 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="NTXE}B/):JMiw19*D^io"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . . . . .
+        `</field></block></statement></block></statement></block></xml>
